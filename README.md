@@ -1,8 +1,8 @@
 # expense-tracker-faies
 
-download zip and extract it.
+1-download zip and extract it.
 
-open expense-tracker-faies folder and run:
+2-open expense-tracker-faies folder and run:
 
 
 
@@ -12,7 +12,10 @@ open expense-tracker-faies folder and run:
 
 --venv\Scripts\activate
 
-To run execute all commands:
+
+
+
+3-To run execute all commands:
 
 
 
@@ -26,8 +29,13 @@ To run execute all commands:
 
 --python manage.py runserver
 
-After this command there is a link like : http://127.0.0.1:8000/
 
 
-copy past that in a browser the add transactions like Income or Expense (there will be empty after first running).
+
+4-After this command there is a link like : http://127.0.0.1:8000/
+
+
+
+
+5-copy past that in a browser the add transactions like Income or Expense (there will be empty after first running).
 
