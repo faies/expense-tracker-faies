@@ -11,6 +11,10 @@
 
 --venv\Scripts\activate
 
+
+
+--pip install django
+
 3-To run execute all commands:
 
 
