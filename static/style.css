@@ -1,0 +1,296 @@
+body{
+    background-color: #F7F7F2;
+}
+*{
+    padding: 5px;
+}
+.gdfaies{
+    font-family: Fraunces, serif;
+    font-size: 31px;
+    letter-spacing: -1.2px;
+    margin: 0;
+    display: inline-block;
+}
+.firstbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro{
+    font-size: 10px;
+    font-weight: 700;
+    color: #759087;
+    letter-spacing: .14em;
+    margin: 0 0  -9px 8px;
+}
+.addtra{
+     background-color: #077F72;
+    color: white;
+    box-shadow: 0 5px 12px #087f7229;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px 17px;
+    font: 600 14px "DM Sans";
+    cursor: pointer;
+    transition: .2s;
+    display: inline-block;
+    
+}
+@media (max-width: 700px) {
+    .firstbtn .gdfaies{
+        font-size: 24px;
+    }
+    .intro{
+        margin: 0 0 -7px 3px;
+    }
+}
+@media (max-width: 700px){
+    .firstbtn{
+        padding: 2px 0px;
+        font: 500 13px "DM Sans";
+
+    }
+}
+
+/* overview part*/
+.cards{
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 17px;
+    padding: 22px;
+}
+
+
+
+table{
+    table-layout: fixed;
+    border-collapse:collapse;
+}
+table th{
+    
+    text-align: center;
+}
+table tr{
+    border-bottom: 1px solid rgb(215, 213, 213);
+}
+
+
+
+
+
+/* form part */
+.uploadtra{
+    background-color: #FFFEFB;
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 17px;
+    padding: 22px;
+    margin-top: 25px;
+}
+.uploadintro{
+    font-size: 10px;
+    font-weight: 700;
+    color: #759087;
+    letter-spacing: .14em;
+    margin: 0;
+}
+.uploadhead{
+    font-family: Fraunces, serif;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+.traform{
+    padding: 0;
+}
+.formbox{
+    padding: 8px;
+}
+.formbox label{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1A4B45;
+    padding: 0;
+    margin-bottom: 7px;
+}
+.formbox input,
+.formbox select{
+    width: 100%;
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+}
+.formbox input:focus,
+.formbox select:focus{
+    border-color: #077F72;
+    box-shadow: 0 0 0 3px #087f7229;
+}
+.amountbox{
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 10px;
+    background-color: white;
+    padding: 0;
+}
+.amountbox span{
+    color: #759087;
+    font-weight: bold;
+    padding: 12px 0 12px 13px;
+}
+.amountbox input{
+    border: 0;
+    box-shadow: none;
+}
+.amountbox input:focus{
+    box-shadow: none;
+}
+.formbtn{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 12px 8px 0 8px;
+}
+.canceltra,
+.savetra{
+    border-radius: 10px;
+    padding: 12px 17px;
+    font: 600 14px "DM Sans";
+    cursor: pointer;
+}
+.canceltra{
+    background-color: white;
+    color: #1A4B45;
+    border: 1px solid rgb(215, 213, 213);
+}
+.savetra{
+    background-color: #077F72;
+    color: white;
+    border: 0;
+    box-shadow: 0 5px 12px #087f7229;
+}
+@media (max-width: 700px){
+    .uploadhead{
+        font-size: 21px;
+    }
+    .formbtn{
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+/* transaction details */
+.tracard{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.7fr auto;
+    align-items: center;
+    gap: 15px;
+    background-color: #FFFEFB;
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 13px;
+    padding: 17px;
+    margin-top: 12px;
+}
+.tracard p{
+    padding: 0;
+    margin: 0 0 6px 0;
+    color: #759087;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+}
+.tracard h6,
+.tracard h5{
+    padding: 0;
+    margin: 0;
+    color: #1A4B45;
+}
+.expenseamt{
+    color: #bd3c3c !important;
+}
+.incomeamt{
+    color: #287344 !important;
+}
+.expensecat,
+.incomecat{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.expensecat{
+    background-color: rgb(204, 113, 113);
+    color: #ffffff;
+}
+.incomecat{
+    background-color: lightgreen;
+    color: #287344;
+}
+.edittra{
+    padding: 8px;
+    color: #077F72;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.notra{
+    text-align: center;
+    color: #759087;
+    margin-top: 20px;
+}
+@media (max-width: 700px){
+    .tracard{
+        grid-template-columns: 1fr 1fr;
+    }
+    .edittra{
+        text-align: right;
+    }
+}
+
+
+.editdelete{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.editdelete form{
+    padding: 0;
+    margin: 0;
+}
+.deletetra{
+    background-color: transparent;
+    border: 0;
+    color: #bd3c3c;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+}
+
+
+.filterbtn{
+    display: flex;
+    gap: 8px;
+    padding: 0;
+    margin: 15px 0;
+}
+.filterbtn a{
+    text-decoration: none;
+    color: #1A4B45;
+    background-color: #FFFEFB;
+    border: 1px solid rgb(215, 213, 213);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.filterbtn a.activefilter{
+    background-color: #077F72;
+    border-color: #077F72;
+    color: white;
+}
