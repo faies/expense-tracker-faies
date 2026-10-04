@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expense-tracker</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="uploadtra">
+            <p class="uploadintro">ADD TRANSACTION</p>
+            <h2 class="uploadhead">Enter transaction details</h2>
+
+            <form class="traform" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-6 formbox">
+                        <label>Amount</label>
+                        <div class="amountbox">
+                            <span>₹</span>
+                            <input type="number" name="amount" placeholder="0">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 formbox">
+                        <label>Category</label>
+                        <select name="category">
+                            <option  value="">Select category</option>
+                            <option value="Income">Income </option>
+                            <option value="Expense">Expense </option>
+
+                        </select>
+                    </div>
+
+                    <div class="col-lg-6 formbox">
+                        <label>Date</label>
+                        <input type="date" name="date">
+                    </div>
+
+                    <div class="col-lg-6 formbox">
+                        <label>Description</label>
+                        <input type="text" name="description" placeholder="Example: Grocery shopping">
+                    </div>
+                </div>
+
+                <div class="formbtn">
+                    <button type="reset" class="canceltra">Cancel</button>
+                    <button type="submit" class="savetra">Save transaction</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
