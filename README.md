@@ -3,8 +3,14 @@
 download zip and extract it.
 
 open expense-tracker-faies folder and run:
--1-python -m venv venv
--2-venv\Scripts\activate
+
+
+
+--python -m venv venv
+
+
+
+--venv\Scripts\activate
 
 To run execute all commands:
 -3-python manage.py makemigrations
